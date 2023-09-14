@@ -1,1 +1,33 @@
-<p>hero-detail works!</p>
+<section class="hero-info">
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <p>id: {{ hero.id }}</p>
+  <p>Name: {{ hero.name }}</p>
+  <p *ngIf="hero.universe">Universe: {{ hero.universe }}</p>
+  <span class="hero-info-buttons">
+    <button class="btn" type="button">Edit</button>
+    <button class="btn" type="button">Back</button>
+  </span>
+</section>
+<section class="edit-hero-info-container">
+  <h2>Edit Hero Info:</h2>
+  <div class="edit-hero-info-content">
+    <form>
+      <label for="hero-name">Name</label>
+      <input type="text" id="hero-name" [(ngModel)]="hero.temporalNewName" />
+      <label for="hero-universe">Universe</label>
+      <input
+        type="text"
+        id="hero-universe"
+        [(ngModel)]="hero.temporalNewUniverse"
+      />
+      <button class="btn" type="submit">Save changes</button>
+      <button class="btn" type="submit">Cancel</button>
+    </form>
+    <div class="changes-preview">
+      <h2>Preview</h2>
+      <p>New name: {{ hero.temporalNewName }}</p>
+      <p *ngIf="hero.universe">Universe: {{ hero.temporalNewUniverse }}</p>
+    </div>
+  </div>
+  <button class="btn" type="button">Back</button>
+</section>

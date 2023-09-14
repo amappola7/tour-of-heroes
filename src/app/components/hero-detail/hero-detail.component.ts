@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Hero } from 'src/app/interfaces/hero';
 
 @Component({
   selector: 'app-hero-detail',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent {
-
+  hero: Hero = {
+    id: 0,
+    name: 'Batman',
+    universe: 'DC',
+    temporalNewName: 'Batman',
+    temporalNewUniverse: 'DC'
+  }
 }

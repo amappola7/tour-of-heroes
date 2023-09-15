@@ -11,6 +11,7 @@ export class HeroDetailComponent {
     id: 0,
     name: 'Batman',
     universe: 'DC',
+    score: 123,
     temporalNewName: 'Batman',
     temporalNewUniverse: 'DC'
   }

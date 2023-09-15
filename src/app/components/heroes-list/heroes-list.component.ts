@@ -9,4 +9,9 @@ import { Hero } from 'src/app/interfaces/hero';
 })
 export class HeroesListComponent {
   heroesList: Hero[] = HEROES;
+  selectedHero!: Hero;
+
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
 }

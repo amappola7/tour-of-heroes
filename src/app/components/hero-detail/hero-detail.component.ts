@@ -7,12 +7,5 @@ import { Hero } from 'src/app/interfaces/hero';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent {
-  hero: Hero = {
-    id: 0,
-    name: 'Batman',
-    universe: 'DC',
-    score: 123,
-    temporalNewName: 'Batman',
-    temporalNewUniverse: 'DC'
-  }
+  hero!: Hero;
 }

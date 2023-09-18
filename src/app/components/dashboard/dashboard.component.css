@@ -1,0 +1,39 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+}
+
+h2  {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #00b4d8;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 60%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+  background-color: #011135;
+  color: #ffffff;
+  text-decoration: none;
+}

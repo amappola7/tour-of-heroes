@@ -11,6 +11,6 @@ export class MessageService {
   }
 
   clearMessages(): void {
-    this.messages = []
+    this.messages = [];
   }
 }

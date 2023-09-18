@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MessageService } from 'src/app/services/message.service';
 
 @Component({
   selector: 'app-messages',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./messages.component.css']
 })
 export class MessagesComponent {
+  messages: string[] = [];
 
+  constructor(public messageService: MessageService) {}
+
+  ngOnInit() {
+    this.messages = this.messageService.messages;
+  }
 }

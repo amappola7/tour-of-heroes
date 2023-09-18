@@ -1,6 +1,9 @@
-<h2>App Messages</h2>
-<p *ngIf="messages.length == 0">There are no messages to display</p>
-<div *ngIf="messages.length > 0">
-  <p *ngFor="let message of messages">{{message}}</p>
-</div>
+<section class="messages">
+  <h2>App Messages</h2>
+  <p *ngIf="messages.length == 0">There are no messages to display</p>
+  <div *ngIf="messages.length > 0">
+    <p *ngFor="let message of messages">{{message}}</p>
+  </div>
+</section>
+
 <!-- <button (click)="messageService.clearMessages()">Clear Messages</button> -->

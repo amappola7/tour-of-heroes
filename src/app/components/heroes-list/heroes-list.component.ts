@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HEROES } from 'src/app/data/mock';
 import { Hero } from 'src/app/interfaces/hero';
+import { HeroStaticService } from 'src/app/services/hero-static.service';
 
 @Component({
   selector: 'app-heroes-list',
@@ -8,10 +9,16 @@ import { Hero } from 'src/app/interfaces/hero';
   styleUrls: ['./heroes-list.component.css']
 })
 export class HeroesListComponent {
-  heroesList: Hero[] = HEROES;
+  heroesList: Hero[] = [];
   selectedHero!: Hero;
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
+  constructor(private heroStaticService: HeroStaticService) {}
+
+  ngOnInit(): void {
+    this.getHeroes();
+  }
+
+  getHeroes(): void {
+    this.heroesList = this.heroStaticService.getHeroes();
   }
 }

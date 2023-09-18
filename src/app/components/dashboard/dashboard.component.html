@@ -1,6 +1,6 @@
 <h2>Top Heroes</h2>
 <ul>
   <li *ngFor="let hero of topHeroes">
-    <button>{{hero.name}}</button>
+    <button (click)="onSelectHero(hero)">{{hero.name}}</button>
   </li>
 </ul>

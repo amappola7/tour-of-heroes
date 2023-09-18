@@ -10,7 +10,7 @@ import { MessageService } from 'src/app/services/message.service';
 })
 export class HeroesListComponent {
   heroesList: Hero[] = [];
-  selectedHero!: Hero;
+  // selectedHero!: Hero;
 
   constructor(private heroStaticService: HeroStaticService, private messageService: MessageService) { }
 
@@ -22,8 +22,8 @@ export class HeroesListComponent {
     this.heroesList = this.heroStaticService.getHeroes();
   }
 
-  onSelectHero(selectedHero: Hero): void {
-    this.selectedHero = selectedHero;
-    this.messageService.addMessage(`Heroes List component: Selected hero id = ${selectedHero.id}, name = ${selectedHero.name}`)
-  }
+  // onSelectHero(selectedHero: Hero): void {
+  //   this.selectedHero = selectedHero;
+  //   this.messageService.addMessage(`Heroes List component: Selected hero id = ${selectedHero.id}, name = ${selectedHero.name}`)
+  // }
 }

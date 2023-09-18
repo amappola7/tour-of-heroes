@@ -5,7 +5,7 @@
   <p *ngIf="hero.universe">Universe: {{ hero.universe }}</p>
   <span class="hero-info-buttons">
     <button class="btn" type="button">Edit</button>
-    <button class="btn" type="button">Back</button>
+    <button class="btn" type="button" (click)="goBack()">Back</button>
   </span>
 </section>
 <section class="edit-hero-info-container">
@@ -29,5 +29,5 @@
       <p *ngIf="hero.universe">Universe: {{ hero.temporalNewUniverse }}</p>
     </div>
   </div>
-  <button class="btn" type="button">Back</button>
+  <button class="btn" type="button" (click)="goBack()">Back</button>
 </section>

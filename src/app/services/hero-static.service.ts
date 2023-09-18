@@ -19,4 +19,10 @@ export class HeroStaticService {
     this.messageService.addMessage('Hero Service: List of top heroes fetched')
     return HEROES.filter((hero: Hero) => hero.score > minScore);
   }
+
+  getHeroById(id: number): Hero {
+    const foundedHero: Hero = HEROES.find((hero) => hero.id === id)!;
+    this.messageService.addMessage(`Hero Service: Fetched hero id = ${foundedHero.id}, name = ${foundedHero.name}`)
+    return foundedHero;
+  }
 }

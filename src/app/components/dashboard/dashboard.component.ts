@@ -10,7 +10,7 @@ import { MessageService } from 'src/app/services/message.service';
 })
 export class DashboardComponent {
   topHeroes: Hero[] = [];
-  selectedHero!: Hero;
+  // selectedHero!: Hero;
 
   constructor(private heroStaticService: HeroStaticService, private messageService: MessageService) {}
 
@@ -18,8 +18,8 @@ export class DashboardComponent {
     this.topHeroes = this.heroStaticService.getTopHeroes(1000);
   }
 
-  onSelectHero(selectedHero: Hero): void {
-    this.selectedHero = selectedHero;
-    this.messageService.addMessage(`Dashboard component: Selected hero id = ${selectedHero.id}, name = ${selectedHero.name}`)
-  }
+  // onSelectHero(selectedHero: Hero): void {
+  //   this.selectedHero = selectedHero;
+  //   this.messageService.addMessage(`Dashboard component: Selected hero id = ${selectedHero.id}, name = ${selectedHero.name}`)
+  // }
 }

@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 15%;
+  padding-top: 30rem;
+  font-size: 1.8rem;
+  background-color: #011135;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88%;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #00b4d8;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.views {
+  width: 70%;
+}
+
+app-messages {
+  width: 15%;
+}

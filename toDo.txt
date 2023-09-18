@@ -1,0 +1,3 @@
+To - Do for Version 2.0:
+- Create the hero service that uses observables to retrieve asynchronous data.
+- Use data from the Web API, not the mock data, by getting the data from a server and using the HttpClient service.

@@ -1,5 +1,9 @@
 <h1>{{title}}</h1>
-<button routerLink="dashboard">Dashboard</button>
-<button routerLink="heroes">Heroes</button>
-<button routerLink="messages">Messages</button>
-<router-outlet></router-outlet>
+<nav>
+  <a routerLink="dashboard">Dashboard</a>
+  <a routerLink="heroes">Heroes</a>
+</nav>
+<main>
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
+</main>

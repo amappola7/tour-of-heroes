@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HEROES } from 'src/app/data/mock';
 import { Hero } from 'src/app/interfaces/hero';
 import { HeroStaticService } from 'src/app/services/hero-static.service';
 
@@ -11,7 +10,9 @@ import { HeroStaticService } from 'src/app/services/hero-static.service';
 export class DashboardComponent {
   topHeroes: Hero[] = [];
 
-  constructor(private heroStaticService: HeroStaticService) {
-    this.topHeroes = heroStaticService.getTopHeroes(1000);
+  constructor(private heroStaticService: HeroStaticService) {}
+
+  ngOnInit(): void {
+    this.topHeroes = this.heroStaticService.getTopHeroes(1000);
   }
 }

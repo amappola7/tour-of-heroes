@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HEROES } from 'src/app/data/mock';
 import { Hero } from 'src/app/interfaces/hero';
 import { HeroStaticService } from 'src/app/services/hero-static.service';
 
